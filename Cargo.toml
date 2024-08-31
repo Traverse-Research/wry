@@ -92,8 +92,8 @@ features = [
 
 [target."cfg(any(target_os = \"ios\", target_os = \"macos\"))".dependencies]
 block = "0.1"
-cocoa = "0.26"
-core-graphics = "0.24"
+cocoa = "0.25"
+core-graphics = "0.23.1"
 objc = "0.2"
 objc_id = "0.1"
 
@@ -104,7 +104,7 @@ kuchiki = { package = "kuchikiki", version = "0.8" }
 sha2 = "0.10"
 base64 = "0.22"
 jni = "0.21"
-ndk = "0.9"
+ndk = "0.8"
 tao-macros = "0.1"
 libc = "0.2"
 

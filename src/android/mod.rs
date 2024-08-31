@@ -112,6 +112,7 @@ pub unsafe fn android_setup(
   };
 
   looper
+    .as_foreign()
     .add_fd_with_callback(MAIN_PIPE[0].as_fd(), FdEvent::INPUT, move |fd, _event| {
       let size = std::mem::size_of::<bool>();
       let mut wake = false;
